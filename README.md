@@ -4,12 +4,14 @@ Starting point for Play 2.1 Scala projects
 
 ## Highlights
 
+* The best ideas from HTML5 Boilerplate
 * ScalaTest (replaces specs2)
 
 ## Getting Started
 
 0. Edit the app name and version in `project/Build.scala`
 0. Change the application secret in `conf/application.conf`
+0. Set the site name in `app/views/layout/base.scala.html`
 0. Have fun!
 
 ## License
