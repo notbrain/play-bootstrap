@@ -5,6 +5,8 @@ Starting point for Play 2.1 Scala projects
 ## Highlights
 
 * Static resources convenience handlers
+* Uncompressed assets for easy debugging in DEV; minified and gzipped in production
+* jQuery via Google CDN with local fallback
 * Optimized Google Analytics snippet
 * The best ideas from HTML5 Boilerplate
 * ScalaTest (replaces specs2)
