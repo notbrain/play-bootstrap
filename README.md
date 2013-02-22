@@ -4,6 +4,7 @@ Starting point for Play 2.1 Scala projects
 
 ## Highlights
 
+* Configuration environments for production, testing, and development
 * Static resources convenience handlers
 * Uncompressed assets for easy debugging in DEV; minified and gzipped in production
 * jQuery via Google CDN with local fallback
@@ -18,10 +19,21 @@ Starting point for Play 2.1 Scala projects
 0. Edit the app name and version in `project/Build.scala`
 0. Change the application secret in `conf/application.conf`
 0. Edit the default database name in `conf/evolutions/default/0.sql`
-0. Set the database configuration parameters in `conf/application.conf`
+0. Copy the file `conf/local.conf.default` to `conf/local.conf`
+0. Set the database configuration parameters in `conf/local.conf` and `conf/local/*.conf`
 0. Set the site name and Google Analytics ID in `app/views/layout/base.scala.html`
 0. Replace favicon and Apple touch icons
 0. Have fun!
+
+### Configuration environments
+
+There are separate configuration environments for production, testing, and development,
+each represented by a file in `conf/local/`. `conf/application.conf` includes `conf/local.conf`,
+which in turn includes one of the files in `conf/local/`. To use the production configuration
+environment, for instance, just edit `local.conf` to include `conf/local/prod.conf`.
+
+`conf/local.conf` is ignored by Git and can be freely edited locally. Sensitive information such
+as usernames, passwords and API tokens must be put there to avoid commiting them to source control.
 
 ## License
 
