@@ -4,6 +4,8 @@ Starting point for Play 2.1 Scala projects
 
 ## Highlights
 
+* Abnorm: A better non-ORM. A thin, less verbose abstraction layer on top of Anorm
+* A data access trait providing Active Record like behavior with minimal effort
 * Externalized SQL statements
 * Configuration environments for production, testing, and development
 * Static resources convenience handlers
